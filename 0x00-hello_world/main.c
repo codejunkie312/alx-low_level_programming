@@ -2,6 +2,6 @@
 
 int main(void)
  {
-  printf("This is a string");
+  printf("This is a string\n");
   return (0);
  }
