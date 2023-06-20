@@ -8,6 +8,7 @@
 
 int main(void)
 {
-	print_alphabet_x10();
+	_putchar('0' + _islower('s'));
+	_putchar('0' + _islower('S'));
 	return (0);
 }
