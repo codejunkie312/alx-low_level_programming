@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -pedantic -Wextra -std=gnu89 $CFILE _putchar.c -o output
+gcc -Wall -Werror -pedantic -Wextra -std=gnu89 _putchar.c 1-main.c $CFILE -o output
