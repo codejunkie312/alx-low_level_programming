@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 void print_array(int *a, int n)
 {
     int i;
@@ -18,23 +19,16 @@ void print_array(int *a, int n)
 
 int main(void)
 {
- char s[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
-    char *p;
-
-    p = rot13(s);
-    printf("%s", p);
-    printf("------------------------------------\n");
-    printf("%s", s);
-    printf("------------------------------------\n");
-    p = rot13(s);
-    printf("%s", p);
-    printf("------------------------------------\n");
-    printf("%s", s);
-    printf("------------------------------------\n");
-    p = rot13(s);
-    printf("%s", p);
-    printf("------------------------------------\n");
-    printf("%s", s);
+ print_number(98);
+    putchar('\n');
+    print_number(402);
+    putchar('\n');
+    print_number(1024);
+    putchar('\n');
+    print_number(INT_MAX);
+    putchar('\n');
+    print_number(INT_MIN);
+    putchar('\n');
     return (0);
 
 }
