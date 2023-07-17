@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CFILE="$1"
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c "$CFILE" -o output
