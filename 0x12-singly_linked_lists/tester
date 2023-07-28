@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CFILE="$1"
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 lists.h "$CFILE" main.c -o output
