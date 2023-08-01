@@ -23,3 +23,5 @@
 * deletes the node at index `index` of a `listint_t` linked list.
 # `listint_t *reverse_listint(listint_t **head);`
 * reverses a `listint_t` linked list.
+# `size_t print_listint_safe(const listint_t *head);`
+* prints a `listint_t` linked list.
