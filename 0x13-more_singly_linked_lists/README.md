@@ -17,3 +17,5 @@
 * returns the nth node of a `listint_t` linked list.
 # `int sum_listint(listint_t *head);`
 * returns the sum of all the data (n) of a `listint_t` linked list.
+# `listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);`
+* inserts a new node at a given position.
