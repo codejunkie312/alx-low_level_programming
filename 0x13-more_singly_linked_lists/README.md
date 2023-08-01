@@ -15,3 +15,5 @@
 * deletes the head node of a `listint_t` linked list, and returns the head node’s data (n).
 # `listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);`
 * returns the nth node of a `listint_t` linked list.
+# `int sum_listint(listint_t *head);`
+* returns the sum of all the data (n) of a `listint_t` linked list.
