@@ -27,3 +27,5 @@
 * prints a `listint_t` linked list.
 # `size_t free_listint_safe(listint_t **h);`
 * This function can free lists with a loop
+# `listint_t *find_listint_loop(listint_t *head);`
+* finds the loop in a linked list.
