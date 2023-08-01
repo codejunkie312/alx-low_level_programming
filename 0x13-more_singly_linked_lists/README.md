@@ -9,3 +9,7 @@
 * adds a new node at the end of a `listint_t` list.
 # `void free_listint(listint_t *head);`
 * frees a `listint_t` list.
+# `void free_listint2(listint_t **head);`
+* frees a `listint_t` list.
+# `int pop_listint(listint_t **head);`
+* deletes the head node of a `listint_t` linked list, and returns the head node’s data (n).
