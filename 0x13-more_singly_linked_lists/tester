@@ -2,4 +2,4 @@
 
 CFILE="$1"
 
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 lists.h $CFILE main.c
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 lists.h *.c
