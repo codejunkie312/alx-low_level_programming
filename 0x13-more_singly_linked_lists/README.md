@@ -25,3 +25,5 @@
 * reverses a `listint_t` linked list.
 # `size_t print_listint_safe(const listint_t *head);`
 * prints a `listint_t` linked list.
+# `size_t free_listint_safe(listint_t **h);`
+* This function can free lists with a loop
