@@ -10,3 +10,5 @@
 * sets the value of a bit to 0 at a given index.
 # `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
 * returns the number of bits you would need to flip to get from one number to another.
+# `int get_endianness(void);`
+* checks the endianness.
