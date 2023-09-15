@@ -1,65 +1,33 @@
-#include "lists.h"
+#include <stdio.h>
+#include <stdbool.h>
 
-/**
- * main - check the code
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    dlistint_t *head;
+bool is_palindrome(int n) {
+    int reversed = 0;
+    int original = n;
 
-    head = NULL;
-    add_dnodeint_end(&head, 0);
-    add_dnodeint_end(&head, 1);
-    add_dnodeint_end(&head, 2);
-    add_dnodeint_end(&head, 3);
-    add_dnodeint_end(&head, 4);
-    add_dnodeint_end(&head, 98);
-    add_dnodeint_end(&head, 402);
-    add_dnodeint_end(&head, 1024);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 5);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    print_dlistint(head);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    printf("-----------------\n");
-    delete_dnodeint_at_index(&head, 0);
-    print_dlistint(head);
-    return (0);
+    while (n > 0) {
+        reversed = reversed * 10 + n % 10;
+        n /= 10;
+    }
+    return reversed == original;
+}
+
+int main() {
+    int largest_palindrome = 0;
+    int a, b;
+
+    for (int i = 100; i <= 999; i++) {
+        for (int j = 100; j <= 999; j++) {
+            int product = i * j;
+
+            if (is_palindrome(product) && product > largest_palindrome) {
+                largest_palindrome = product;
+                a = i;
+                b = j;
+            }
+        }
+    }
+
+    printf("%d = %d x %d\n", largest_palindrome, a, b);
+    return 0;
 }
