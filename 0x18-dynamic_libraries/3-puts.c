@@ -3,16 +3,15 @@
 
 /**
  * _puts - prints a string
- * @str: a char
+ * @s: a char
  * Return: nothing
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		write(1, str, 1);
-		str++;
+		write(1, s, 1);
+		s++;
 	}
-	putchar('\n');
 }
