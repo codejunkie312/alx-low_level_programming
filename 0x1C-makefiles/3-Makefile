@@ -14,14 +14,15 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) $(TEMP) $(OBJ)
+	$(RM) $(TEMP) $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean:
-	clean oclean
+	$(RM) $(TEMP) $(NAME)
+	$(RM) $(OBJ)
 
 re: fclean all
 
-.PHONY: all clean oclean fclean re
+.PHONY: all clean oclean fclean re $(NAME)
